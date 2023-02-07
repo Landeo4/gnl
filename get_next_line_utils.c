@@ -6,7 +6,7 @@
 /*   By: landeo <landeo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 16:25:30 by tpotilli@st       #+#    #+#             */
-/*   Updated: 2023/02/07 13:49:53 by landeo           ###   ########.fr       */
+/*   Updated: 2023/02/07 15:17:48 by landeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,6 @@ char	*ft_substr(char *s, int start, int len)
 	while (i++ < len && (start + i) < ft_strlen(s))
 		str[i] = s[start + i];
 	str[i] = '\0';
-	//printf("\n%s\n", s);
+	printf("\n%szz\n", s);
 	return (str);
 }

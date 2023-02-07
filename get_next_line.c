@@ -6,7 +6,7 @@
 /*   By: landeo <landeo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 15:54:18 by tpotilli@st       #+#    #+#             */
-/*   Updated: 2023/02/07 14:20:58 by landeo           ###   ########.fr       */
+/*   Updated: 2023/02/07 14:45:07 by landeo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,8 @@ char *ft_next_line(char *backup)
 	while(backup[i] && backup[i] != '\n')
 		i++;
 	new = ft_substr(backup, i, ft_strlen(backup) - i + 1);
+	printf("la c'est l'ancien %s", new);
+	printf("la c'est le prochain%s", new);
 	free(backup);
 	return (new);
 }
