@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: landeo <landeo@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tpotilli <tpotilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 15:53:32 by tpotilli@st       #+#    #+#             */
-/*   Updated: 2023/02/02 15:34:03 by landeo           ###   ########.fr       */
+/*   Updated: 2023/02/08 11:37:58 by tpotilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int 	ft_strlen(char *str);
 char 	*ft_clean(char *backup, int i);
 char 	*free_join(char *backup, char *buffer);
 char	*ft_substr(char *s, int start, int len);
+int ft_find_newline(char *str);
 
 #endif

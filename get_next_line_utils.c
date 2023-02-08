@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: landeo <landeo@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tpotilli <tpotilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 16:25:30 by tpotilli@st       #+#    #+#             */
-/*   Updated: 2023/02/07 15:17:48 by landeo           ###   ########.fr       */
+/*   Updated: 2023/02/08 11:52:48 by tpotilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,9 +93,8 @@ char	*ft_substr(char *s, int start, int len)
 	if (!str)
 		return (NULL);
 	i = -1;
-	while (i++ < len && (start + i) < ft_strlen(s))
+	while (++i < len && (start + i) < ft_strlen(s))
 		str[i] = s[start + i];
 	str[i] = '\0';
-	printf("\n%szz\n", s);
 	return (str);
 }
